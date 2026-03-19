@@ -3,24 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Agenda Contactos</title>
-    <link rel="stylesheet" href="Outfit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="outfit.css">
 </head>
 
 <body>
 
-
     <div class="formulario">
         <h2>Contactos</h2>
 
-        <label>Usuario</label>
-        <input type="email">
+        <ul class="lista-contactos">
+            <li>Juan Pérez - 3001234567</li>
+            <li>María Gómez - 3109876543</li>
+        </ul>
 
-        <label>Contraseña</label>
-        <input type="password">
+        <h3>Agregar contacto</h3>
 
-        <button class="btn">Iniciar Sesión</button>
+        <form>
+            <label>Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label>Teléfono</label>
+            <input type="text" name="telefono" required>
+
+            <button class="btn" type="submit">Guardar</button>
+        </form>
     </div>
+
 </body>
 
 </html>
