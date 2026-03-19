@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" href="Outfit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="outfit.css">
 </head>
 
 <body>
@@ -11,19 +13,32 @@
     <div class="formulario">
         <h2>Registro</h2>
 
-        <label>Nombre completo</label>
-        <input type="text">
+        <form>
 
-        <label>Correo electrónico</label>
-        <input type="email">
+            <label>Nombre completo</label>
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
 
-        <label>Contraseña</label>
-        <input type="password">
+            <label>Correo electrónico</label>
+            <input type="email" name="correo" placeholder="ejemplo@email.com" required>
 
-        <label>Confirmar contraseña</label>
-        <input type="password">
+            <label>Contraseña</label>
+            <input type="password" name="password" placeholder="Mínimo 6 caracteres" minlength="6" required>
 
-        <button class="btn">Registrar</button>
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="3001234567" required>
+
+            <label>Dirección</label>
+            <input type="text" name="direccion" placeholder="Tu dirección" required>
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" required>
+
+            <label>Ciudad / País</label>
+            <input type="text" name="ciudad" placeholder="Ej: Bogotá, Colombia" required>
+
+            <button class="btn" type="submit">Registrar</button>
+
+        </form>
     </div>
 
 </body>
