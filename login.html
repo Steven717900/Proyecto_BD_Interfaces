@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" href="Outfit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="outfit.css">
 </head>
 
 <body>
@@ -11,13 +13,15 @@
     <div class="formulario">
         <h2>Login</h2>
 
-        <label>Usuario</label>
-        <input type="email">
+        <form>
+            <label>Correo</label>
+            <input type="email" name="correo" placeholder="Ingresa tu correo" required>
 
-        <label>Contraseña</label>
-        <input type="password">
+            <label>Contraseña</label>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
 
-        <button class="btn">Iniciar Sesión</button>
+            <button class="btn" type="submit">Iniciar Sesión</button>
+        </form>
     </div>
 
 </body>
